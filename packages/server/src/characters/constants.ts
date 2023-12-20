@@ -22,4 +22,5 @@ export const humansQuery = `
 }
 `;
 export const pagePlaceholder = "<page>";
+export const port = 3001;
 export const rickAndMortyGraphQLServer = "https://rickandmortyapi.com/graphql";
