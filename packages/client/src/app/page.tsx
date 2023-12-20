@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Character from "@/app/character/components/character";
+import Character from "@/app/characters/components/character";
 
 export default function Home() {
   return (

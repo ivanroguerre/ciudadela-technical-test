@@ -1,5 +1,5 @@
 import { Character, CharactersResponse, CountResponse } from "shared";
-import { MAX_DOCUMENTS_PER_PAGE } from "@/app/character/constants";
+import { MAX_DOCUMENTS_PER_PAGE } from "@/app/characters/constants";
 
 const humans: Character[] = [
   {
