@@ -9,6 +9,7 @@
     "lerna": "^8.0.1"
   },
   "scripts": {
+    "dev": "lerna run dev",
     "dev:client": "lerna run dev --scope=client",
     "dev:server": "lerna run dev --scope=server"
   }

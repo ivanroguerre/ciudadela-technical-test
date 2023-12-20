@@ -24,7 +24,7 @@ app.get("/count", (_, res: Response<CountResponse>) => {
     body: JSON.stringify({ query: humansCountQuery }),
   })
     .then((_res) => _res.json())
-    .then((_res) => res.json({ count: _res.data.characters.info.count }));
+    .then((_res: any) => res.json({ count: _res.data.characters.info.count }));
 });
 
 app.get("/characters", (req, res: Response<CharactersResponse>) => {
@@ -41,7 +41,9 @@ app.get("/characters", (req, res: Response<CharactersResponse>) => {
     body: JSON.stringify({ query: humansQuery.replace(pagePlaceholder, page) }),
   })
     .then((_res) => _res.json())
-    .then((_res) => res.json({ characters: _res.data.characters.results }));
+    .then((_res: any) =>
+      res.json({ characters: _res.data.characters.results })
+    );
 });
 
 app.listen(port);
