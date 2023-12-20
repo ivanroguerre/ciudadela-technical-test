@@ -7,5 +7,8 @@
   "dependencies": {},
   "devDependencies": {
     "lerna": "^8.0.1"
+  },
+  "scripts": {
+    "dev:client": "lerna run dev --scope=client"
   }
 }
